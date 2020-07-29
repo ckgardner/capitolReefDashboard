@@ -1,0 +1,678 @@
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+.background {
+    stroke-width: 7;
+    fill: none;
+}
+.overlayLine {
+    fill: none;
+    stroke-width: 7;
+    animation: dash 2s linear forwards;
+}
+@font-face{
+    font-family: "myRoboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: "titleRoboto";
+    src: url("fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-family: 'myRoboto';
+    font-style: normal;
+    font-weight: normal;
+}
+html,body{
+    overflow-x: hidden;
+}
+v-app-bar{
+    height: 80px;
+}
+/* ----------------------- LOGIN PAGE --------------------------*/
+.bison{
+    margin-right: 15px;
+}
+#requestAccessButton{
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0pt;
+    color: #B25538;
+    text-transform: none;
+    margin-right: 20px;
+}
+#loginButton{
+    border: 1px solid #B25538;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B25538;
+}
+#loginTitle{
+    font-size: 30px;
+    line-height: 60px;
+    color: #B25538;
+    font-family: "titleRoboto";
+    margin: 20px;
+    cursor: pointer;
+}
+.homeTitle{
+    cursor: pointer;
+}
+#loginWrapper{
+    display:inline-block;
+    position:relative;
+}
+#loginImage{
+    max-width: 100%;
+    height: auto;
+}
+#requestAccess{
+    background: #B25538;
+    color: white;
+    border-radius: 100px;
+    height: 10%;
+    width: 15%;
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    position: absolute;
+    left: 42%;
+    top: 50%;
+}
+#researchTextWrapper, #researchTitle{
+    width: 385px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #283941;
+    text-align: center;
+}
+#researchTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+#logosWrapper{
+    width: 700px;
+    margin: 0 auto;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 93px;
+}
+#dsuLogo{
+    background-image: url("images/DSU-Logo-03\ 1.svg");
+    height: 49px;
+    width: 199px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+#iicLogo{
+    background-image: url("images/iic-logo\ 1.svg");
+    height: 85px;
+    width: 85px;
+}
+#suuLogo{
+    background-image: url("images/Primary-Wordmark-bw\ 1.svg");
+    width: 200px;
+    height: 55px;
+    margin-right: auto;
+    margin-top: 15px;
+}
+/* --------------------------REQUEST ACCESS-------------------------*/
+.formWrapper{
+    width: 384px;
+    margin: 0 auto;
+}
+.loginTitles{
+    font-family: "titleRoboto";
+    font-size: 36px;
+    line-height: 47px;
+    color: rgba(0, 0, 0, 0.86);
+    margin-top: 40px;
+}
+.inputs{
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 384px;
+    height: 56px;
+    vertical-align: middle;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+.inputs.email{
+    margin-top: 0px;
+}
+.inputsMessage{
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 384px;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px; 
+    margin-top: 25px;
+}
+.submitButton{
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    width: 72px;
+    height: 39px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submitButton:hover{
+    background-color: rgba(67, 98, 112, .2);
+    border: 2px solid #507282;
+}
+.inputs:focus{
+    outline: none;
+    border: 2px solid #507282;
+}
+.inputsMessage:focus{
+    outline: none;
+    border: 2px solid #507282;
+}
+.name, .email, .message, .username, .pass{
+    border-color: #C30F0F;
+}
+.nameError, .emailError, .usernameError, .passError{
+    color: #C30F0F;
+    background-color: white;
+    /* border: 3px solid white; */
+    font-size: 12px;
+    position: relative;
+    top: 36px;
+    left: 12px;
+    width: 60px;
+}
+.emailError{
+    top: 12px;
+}
+.passError{
+    top: 37px;
+}
+.nameReq, .emailReq, .usernameReq, .passReq{
+    color: #C30F0F;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+/* -----------------------------MAIN PAGE---------------------------*/
+#titleWrapper{
+    left: 17.5%;
+    margin-top: 46px;
+    position: absolute;
+}
+#title, #titleStatus{
+    font-family: "titleRoboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.86);
+}
+#titleStatus{
+    margin-bottom: 30px;
+}
+.yesterdayTitle, .yesterdayTitleStatus{
+    display: inline;
+}
+#totalVisitors{
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin-top: 6px;
+}
+.stat{
+    height: 86px;
+}
+.statWrapper{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 152px;
+}
+.statWrapperEntrances{
+    width: 65%;
+    margin: 0 auto;
+}
+.statWrapper span{
+	vertical-align:middle;
+    display:inline-block;
+    margin-top: 15px;
+}
+.textWrap{
+    display: inline;
+}
+.tempPush{
+    margin-left: 80px !important;
+}
+.svg2{
+    vertical-align:middle;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: -22px;
+}
+.statWrapper2{
+    width: 98%;
+    margin: 0 auto;
+}
+.textWrapper, .textWrapper2{
+    display: inline-block;
+    position: relative;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-top: 16px;
+}
+.textWrapper2{
+    margin-top: 4px;
+}
+.statImage, .statImage2{
+    height: 23px;
+    width: 23px;
+    margin: 30px 30px 20px 0px;
+    vertical-align: middle;
+}
+.statImage2{
+    margin: 20px 30px 20px 0px;
+
+}
+#parkingStat{
+    background-color: #507282;
+    color: white;
+    font-size: 16px;
+}
+#eastEntranceStat{
+    background-color: #B25538;
+    color: white;
+    font-size: 16px;
+}
+#yesterdayWrapper{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 115px;
+}
+
+/* table{
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+td, th{
+    border-bottom: 1px solid #E5E7DE;
+}
+td{
+    height: 50px;
+    vertical-align: middle;
+    text-align: left;
+}
+th{
+    text-align: left;
+    font-weight: bold;
+} */
+.tableStats{
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.tableTD, .tableTH{
+    border-bottom: 1px solid #E5E7DE;
+}
+.tableTD{
+    height: 50px;
+    vertical-align: middle;
+    text-align: left;
+}
+.tableTH{
+    text-align: left;
+    font-weight: bold;
+}
+
+.gold{
+    color: #B25538;
+}
+.right{
+    text-align: right;
+}
+#yesterdayEntrances{
+    margin-top: 15px;
+}
+#svg{
+    position: absolute;
+    top: 5%;
+    width: 350px;
+    height: 350px;
+}
+.trafficSvg{
+    position: absolute;
+    top: 280px;
+    width: 60vw;
+    height: 65vh;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+@media only screen and (min-width: 720px){
+    #svg{
+        left: 56%;
+    }
+}
+#svgContainer{
+    width: 100%;
+}
+.trafficSvgContainer{
+    width: 100%;
+}
+.iframeContainer{
+    height: 100%;
+    width: 100%;
+}
+.radarCharts{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 290px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;  
+    margin: 10px; 
+    padding: 0; 
+    overflow: hidden; 
+}
+body {
+    margin: 0;
+}
+.noData{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.state-NA{
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    margin-top: 2%;
+}
+#footer{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    margin-bottom: -8px;
+}
+
+/* Traffic Meter Page */
+.colorContainer{
+    margin:60px
+}
+.colorsWrapper{
+    width: 110px;
+    margin-bottom: 12px;
+}
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 12px 0px 12px 0px;
+}
+.circleText{
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+/* ----------------- Parking Page ----------------------- */
+.visitorButtonContainer, .ETIButtonContainer{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    /* margin-bottom: 15px; */
+    display: inline-block;
+    width: 100px;
+    height: auto;
+}
+.MButtonContainer{
+    margin-left: 24px;
+}
+.titles{
+    font-size: 30px;
+    line-height: 60px;
+    color: #B25538;
+    font-family: "titleRoboto";
+    margin: 20px;
+    cursor: pointer;
+}
+.appbar__title--mobile {
+    font-size: 20px;
+    line-height: 23px;
+    font-family: "titleRoboto";
+    color: rgba(0, 0, 0, 0.86);
+}
+.tabs{
+    margin-top: 20px;
+}
+.parkingInfo{
+    font-size: 36px;
+    font-family: "titleRoboto";
+}
+.overflowButtonContainer, .ETOButtonContainer, .RButtonContainer, .SButtonContainer, .MButtonContainer, .DButtonContainer, .MonthButtonContainer, .DayButtonContainer{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+}
+.ETIButtonContainer, .MButtonContainer, .ETOButtonContainer, .RButtonContainer, .SButtonContainer, .DButtonContainer , .MonthButtonContainer, .DayButtonContainer{
+    width: 150px;
+}
+.visitorButton, .overflowButton{
+    width: 100%;
+    height: 48px;
+}
+.ETIButton, .ETOButton, .RButton, .SButton, .MButton, .MonthButton, .DayButton, .DButton{
+    width: 100%;
+    height: 48px;
+}
+.parkButtons{
+    color: #507282;
+    margin: 0px 20px;
+}
+.entranceButtons{
+    color: #666666;
+}
+.parkButtonsfocus{
+    border-bottom: 2px solid #507282;
+}
+.entranceButtonsfocus{
+    border-bottom: 2px solid #B25538;
+    color: #B25538;
+}
+#parkingWrapper{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#entranceStats{
+    width: 95%;
+    margin-left: 24px;
+}
+#radarTable{
+    width: 50%;
+}
+.radarLabels{
+    font-size: 16px;
+    font-family: 'myRoboto';
+}
+#trafficCountTable{
+    width: 40%;
+}
+.tableHeading {
+    font-weight: bold;
+}
+.parkingApi{
+    text-align: center;
+    height: 700px;
+    width: 100%;
+}
+.smallShow{
+    display: none;
+}
+.statHeader{
+    width: 100%;
+    height: 56px;
+    background-color: #507282;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 56px;
+    font-size: 24px;
+    font-family: "titleRoboto";
+}
+.statHeader2{
+    width: 100%;
+    height: 72px;
+    background-color: #B25538;
+    text-align: left;
+    padding-left: 20px;
+    vertical-align: middle;
+    line-height: 72px;
+    font-size: 20px;
+    font-family: "myRoboto";
+}
+.statHeader span, .statHeader2 span{
+    vertical-align: middle;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+}
+.greenTraffic{
+    background-color: #7E8959;
+}
+.yellowTraffic{
+    background-color: #C9AC68;
+}
+.redTraffic{
+    background-color: #B25538;
+}
+.mobile-tabs{
+    display: none;
+}
+@media only screen and (max-width: 719px){
+    /* for the tabs on entrance page */
+    .desktop-tabs{
+        display: none;
+    }
+    .mobile-tabs {
+        display: inline-flex;
+        width: 60px;
+    }
+    #logosWrapper{
+        text-align: center;
+    }
+    #researchTextWrapper{
+        width: 330px;
+    }
+    #dsulogo, #iiclogo, #suulogo, .column{
+        width: 70%;
+        margin-top: 0px;
+    }
+    .stat{
+        display: none;
+    }
+    #svg{
+        position: relative;
+        top: 90px;
+        display: block;
+        margin: 0 auto;
+    }
+    .smallShow{
+        display: block;
+    }
+    #svgContainer{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .colorContainer{
+        text-align: center;
+        margin: 12px;
+    }
+    .trafficSvg{
+        top: 25%;
+    }
+    .colorsWrapper{
+        display: inline;
+        margin-right: 16px;
+    }
+    #yesterdayWrapper{
+        width: 420px;
+        margin-top: 10px; 
+    }
+    #titleWrapper{
+        width: 320px;
+        left: 25%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    table{
+        width: 420px;
+    }
+    #title, #titleStatus{
+        display: inline;
+    }
+}
+@media only screen and (max-width: 450px){
+    #title, #titleStatus, #yesterdayTitle{
+        font-size: 18px;
+    }
+    table{
+        overflow: scroll;
+    }
+    #yesterdayWrapper{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media only screen and (min-width: 960px){
+    .radarCharts {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 365px){
+    .eastCharts {
+        margin-top: 30px;
+    }
+}
