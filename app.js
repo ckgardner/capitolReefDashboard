@@ -159,7 +159,7 @@ var app = new Vue({
         },
         getWeatherAPI: function() {
 			var vm = this;				
-			axios.get("https://forecast.weather.gov/MapClick.php?lat=37.70128&lon=-112.14897&unit=0&lg=english&FcstType=dwml").then(response => {
+			axios.get("https://forecast.weather.gov/MapClick.php?lat=38.301&lon=-111.2416&unit=0&lg=english&FcstType=dwml").then(response => {
 				let parser = new DOMParser();
 				let doc = parser.parseFromString(response.data, "text/xml");
 				var currentWeather = doc.getElementsByTagName("data")[1];

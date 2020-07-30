@@ -54,7 +54,7 @@
 						<div id="svgContainer">
 							<svg id="svg" viewBox="45 43 110 110">
 								<circle cx="100" cy="100" r="51" style="stroke: white; fill: white;"/> 
-								<text x="86" y="104" id="currentTemp" font-size="9" font-weight="bold" style="fill: #B25538">{{currentTemp}}&#176;</text><image x="102" y="94" width="14" height="14" v-bind:href="weatherImage"></image>
+								<text x="86" y="104" id="currentTemp" font-size="9" font-weight="bold" style="fill: #B25538">{{currentTemp}}&#176;</text><image x="105" y="94" width="14" height="14" v-bind:href="weatherImage"></image>
 								<circle class="background" cx="100" cy="100" r="47" stroke="#F0DDD7" />
 								<circle id="line1" class="overlayLine" cx="100" cy="100" r="47" stroke="#B25538" stroke-dasharray="0, 3000" stroke-dashoffset="251" transform="rotate(-90,100,100)" />
 							</svg>
@@ -97,7 +97,7 @@
 						<v-card>
 							<div>
 								<div class="d-none d-md-inline-flex">
-									<p v-on:click="mainPage='Home'; statRefresh();" class="ml-6 titles mr-0 " ><img class="bison" src="icons/bison.svg">Parkdata - Bryce Canyon National Park</p>
+									<p v-on:click="mainPage='Home'; statRefresh();" class="ml-6 titles mr-0 " ><img class="bison" src="icons/bison.svg">Parkdata - Capitol Reef National Park</p>
 								</div>
 								<div class="d-sm-inline-flex d-md-none d-inline-flex">
 									<p v-on:click="mainPage='Home'; statRefresh();" class="ml-6 mt-4 appbar__title--mobile">Parkdata</p>
@@ -149,7 +149,7 @@
 							<div class="statHeader2" v-bind:class="{greenTraffic: lightTraffic, yellowTraffic: mediumTraffic, redTraffic: heavyTraffic}">
 								<div class="statWrapperEntrances">
 									<div class="textWrapper2">
-										<span class="smallHide"><b>East Entrance Traffic</b> | {{currentTime}}</span>
+										<span class="smallHide"><b>Capitol Reef Entrance Traffic</b> | {{currentTime}}</span>
 									</div>
 								</div>
 							</div>
@@ -166,21 +166,21 @@
 							</div>
 							<div v-if="lightTraffic" class="trafficSvgContainer">
 								<svg class="trafficSvg" viewBox="45 43 110 110">
-									<image x="57.5" y="57.5" width="85" height="85" href="icons/bryce-canyon.jpg"></image>
+									<image x="57.5" y="57.5" width="85" height="85" href="icons/capitol-reef.jpg"></image>
 									<circle class="background" cx="100" cy="100" r="47" stroke="#E5E7DE" />
 									<circle id="trafficLine" class="overlayLine" cx="100" cy="100" r="47" stroke="#7E8959" stroke-dasharray="0, 3000" stroke-dashoffset="251" transform="rotate(-90,100,100)" />
 								</svg>
 							</div>
 							<div v-if="mediumTraffic" class="trafficSvgContainer">
 								<svg class="trafficSvg" viewBox="45 43 110 110">
-									<image x="57.5" y="57.5" width="85" height="85" href="icons/bryce-canyon.jpg"></image>
+									<image x="57.5" y="57.5" width="85" height="85" href="icons/capitol-reef.jpg"></image>
 									<circle class="background" cx="100" cy="100" r="47" stroke="#F4EEE1" />
 									<circle id="trafficLine" class="overlayLine" cx="100" cy="100" r="47" stroke="#C9AC68" stroke-dasharray="0, 3000" stroke-dashoffset="251" transform="rotate(-90,100,100)" />
 								</svg>
 							</div>
 							<div v-if="heavyTraffic" class="trafficSvgContainer">
 								<svg class="trafficSvg" viewBox="45 43 110 110">
-									<image x="57.5" y="57.5" width="85" height="85" href="icons/bryce-canyon.jpg"></image>
+									<image x="57.5" y="57.5" width="85" height="85" href="icons/capitol-reef.jpg"></image>
 									<circle class="background" cx="100" cy="100" r="47" stroke="#F0DDD7" />
 									<circle id="trafficLine" class="overlayLine" cx="100" cy="100" r="47" stroke="#B25538" stroke-dasharray="0, 3000" stroke-dashoffset="251" transform="rotate(-90,100,100)" />
 								</svg>
@@ -193,7 +193,7 @@
 								<div class="statWrapperEntrances">
 									<img class="statImage2" src="icons/east_entrance_outline.svg">
 									<div class="textWrapper2">
-										<span class="smallHide"><b>East Entrance:</b><br>{{entranceDisplay}}</span>
+										<span class="smallHide"><b>Capitol Reef Entrance:</b><br>{{entranceDisplay}}</span>
 										<svg class="svg2" viewBox="86 86 30 30" height="50px" width="50px">
 											<circle cx="100" cy="100" r="13" style="stroke: white; fill: white;"/> 
 											<circle class="background" cx="100" cy="100" r="9" stroke="#f7f6f4" />
@@ -212,7 +212,7 @@
 								<div class="statWrapperEntrances">
 									<img class="statImage2" src="icons/east_entrance_outline.svg">
 									<div class="textWrapper2">
-										<span class="smallHide"><b>East Exit:</b><br>{{entranceOutDisplay}}</span>
+										<span class="smallHide"><b>Capitol Reef Exit:</b><br>{{entranceOutDisplay}}</span>
 										<svg class="svg2 tempPush" viewBox="86 86 30 30" height="50px" width="50px">
 											<circle cx="100" cy="100" r="13" style="stroke: white; fill: white;"/> 
 											<circle class="background" cx="100" cy="100" r="9" stroke="#f7f6f4" />
@@ -249,7 +249,7 @@
 						<div v-if="S_selected">
 							<div class="statHeader2">
 								<div class="statWrapperEntrances">
-									<span>East Entrance States Report</span>
+									<span>Capitol Reef Entrance States Report</span>
 								</div>
 							</div>
 							<!-- drop down for times -->
